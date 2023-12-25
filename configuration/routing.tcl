@@ -59,4 +59,5 @@ set ::env(GLB_RESIZER_SETUP_MAX_BUFFER_PERCENT) 50
 set ::env(GLB_RESIZER_ALLOW_SETUP_VIOS) 0
 if { $::env(PDK) == "sky130A" } {
     set ::env(RT_CLOCK_MIN_LAYER) met3
+    set ::env(GPL_CELL_PADDING) 2
 }
