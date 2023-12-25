@@ -349,7 +349,8 @@ def cli(
                         "OpenLane failed to start up:",
                         error=True,
                     )
-                    print(e.stdout.decode("utf8"))
+                    if e.stdout:
+                        print(e.stdout.decode("utf8"))
 
                 design_failure_flag = True
 
